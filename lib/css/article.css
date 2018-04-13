@@ -1,0 +1,150 @@
+body { font-family: 'Open Sans', sans-serif;}
+
+.container {
+  max-width: 960px;
+}
+
+.container {
+  position: relative;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.head h3 {
+  -webkit-margin-after: .1em;
+}
+.head h1 {
+  -webkit-margin-before: .1em;
+}
+
+#image-gallery {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+#image-gallery .view-panel {
+  padding-top: 66%;
+  position: relative;
+  overflow: hidden;
+}
+
+#image-gallery .selected-image {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+.image-selections {
+  float: right;
+}
+
+.image-selections .image-single .loader {
+	font-size: .1em;
+}
+
+.image-selections .image-single {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	float: right;
+	margin-left: .5em;
+	margin-bottom: .5em;
+	width: 3em;
+	height: 2em;
+}
+
+.image-selections img {
+  min-width: 100%;
+  max-height: 100%;
+}
+
+#video-pane {
+  width: 40%;
+  margin-left: .5em;
+  float: right;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.media-meta {
+  font-size: .8em;
+}
+
+.media-meta .media-title {
+  font-weight: bold;
+}
+.media-meta .media-author {
+  font-size: .9em;
+  color: gray;
+}
+
+/* Simple 3 column grid */
+.row {
+  width: 100%;
+  margin-bottom: .5em;
+}
+.col-md-1 {
+  width: 33.3333%;
+  float: left;
+}
+.col-md-2 {
+  width: 66.6667%;
+  float: left;
+}
+
+.placeholder {
+	background: lightgray;
+}
+
+.view-panel .loader, .image-single .loader {
+	left: calc(37.5% - 1em);
+	top: calc(31.25% - 1em);
+	width: 25%;
+	height: 37.5%;
+}
+
+.video-container .loader {
+	left: calc(40.625% - 1em);
+	top: calc(37.5% - 1em);
+	width: 18.75%;
+	height: 25%;
+	font-size: .7em;
+}
+
+.loader {
+	position: absolute;
+	border: 1em solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 1em solid #3498db;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
